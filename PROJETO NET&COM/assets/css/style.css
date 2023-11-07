@@ -127,7 +127,7 @@ header {
 
 .banner-img {
     flex: 1;
-    background-image: url(../images/img1-removebg-preview.png);
+    background-image: url(../images/banner1.png);
     background-position: center;
     background-size: cover;
 }
@@ -713,6 +713,7 @@ footer .unidades {
         align-items: center;
         width: 450px;
         margin-right: 0;
+        text-align: center;
     }
         
 }
@@ -799,8 +800,13 @@ footer .unidades {
     footer .apresentacao_final,
     footer .links_uteis {
         align-items: center;
-        width: 275px;
+        width: 400px;
         margin-right: 0;
+        text-align: center;
+    }
+
+    footer .apresentacao_final span {
+        width: auto;
     }
 
 }
@@ -918,8 +924,13 @@ footer .unidades {
     footer .apresentacao_final,
     footer .links_uteis {
         align-items: center;
-        width: 275px;
+        width: 320px;
         margin-right: 0;
+        text-align: center;
+    }
+
+    footer .apresentacao_final span {
+        width: auto;
     }
 
 }
@@ -1061,6 +1072,7 @@ footer .unidades {
         align-items: center;
         width: 275px;
         margin-right: 0;
+        text-align: center;
     }
 
 }
