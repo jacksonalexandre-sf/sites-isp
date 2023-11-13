@@ -1,0 +1,1181 @@
+
+:root {
+    --roxo: #541976;
+    --marrom-claro: #b2503b;
+    --marrom-escuro: #8b3752;
+    --preto: #000;
+    --branco: #fff;
+    --verde-limao: #00e676;
+    --cinza1: #aaa;
+    --cinza2: #eee;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+}
+
+.heading .logo {
+    width: 200px;
+    height: 60px;
+}
+
+.heading .logo a {
+    width: 100%;
+    height: 100%;
+}
+
+.heading .logo img {
+    width: inherit;
+    height: inherit;
+}
+
+.heading nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.heading nav ul li {
+    text-transform: uppercase;
+}
+
+.heading ul a {
+    margin: 0px 20px;
+    padding: 5px 12px;
+}
+
+.heading a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.heading ul a:hover {
+    background: linear-gradient(to right, var(--marrom-claro), var(--marrom-escuro), var(--roxo));
+    color: var(--branco);
+    border-radius: 15px;
+}
+
+.heading .logo-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+}
+
+.heading .logo-mobile div {
+    width: 45px;
+    height: 5px;
+    background: var(--preto);
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us i {
+    font-size: 50px;
+    margin: 0px 10px;
+    color: var(--verde-limao);
+}
+
+.contact-us div {
+    text-align: center;
+}
+
+#banner {
+    display: flex;
+    background-image: url(../images/traldi-e-saggioro-nossa-infraestrutura-02-uai-1200x514.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+#banner .fundo-blue {
+    display: flex;
+    background: rgba(84, 25, 118, 0.7);
+    width: 100vw;
+    justify-content: center;
+}
+
+#banner .fundo-blue .container {
+    display: flex;
+}
+
+.banner-content {
+    flex: 1;
+    padding: 120px 20px 150px 20px;
+}
+
+.banner-content h1 {
+    font-size: 45px;
+    color: #FFF;
+}
+
+.banner-content div {
+    font-size: 20px;
+    margin: 0px 0px 30px 0px;
+    color: #FFF;
+}
+
+.banner-content a {
+    text-decoration: none;
+    background: linear-gradient(to right, var(--marrom-claro), var(--marrom-escuro), var(--roxo));
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.banner-img {
+    flex: 1;
+    background-image: url(../images/banner1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#planos {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#planos .beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#planos .beneficios div {
+    display: flex;
+    padding: 5px 30px;
+    margin-top: 30px;
+}
+
+#planos .beneficios div i{
+    font-size: 40px;
+    width: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+#planos .beneficios div img{
+    width: 40px;
+    margin-right: 17px;
+}
+
+#planos .beneficios div span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#planos .beneficios div p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+#planos .gradient-text {
+    background: linear-gradient(to right, var(--roxo), var(--marrom-escuro), var(--marrom-claro));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+}
+
+#planos .beneficios .bordas-laterais {
+    border-left: 3px solid var(--cinza1);
+    border-right: 3px solid var(--cinza1);
+}
+
+#planos .planos-valores {
+    display: flex;
+    margin-top: 50px;
+}
+
+#planos .planos-valores .plano-100mega,
+#planos .planos-valores .plano-200mega,
+#planos .planos-valores .plano-300mega {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza2);
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#planos .planos-valores .plano-100mega div,
+#planos .planos-valores .plano-200mega div,
+#planos .planos-valores .plano-300mega div {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: 1px solid var(--cinza1);
+}
+
+#planos .planos-valores .plano-100mega div:last-of-type,
+#planos .planos-valores .plano-200mega div:last-of-type,
+#planos .planos-valores .plano-300mega div:last-of-type {
+    border-bottom: none;
+}
+
+#planos .planos-valores .plano-100mega div:last-of-type i,
+#planos .planos-valores .plano-200mega div:last-of-type i {
+    color: var(--cinza1);
+}
+
+#planos .planos-valores .plano-100mega div:last-of-type span,
+#planos .planos-valores .plano-200mega div:last-of-type span {
+    color: var(--cinza1);
+}
+
+#planos .planos-valores .plano-100mega h2,
+#planos .planos-valores .plano-200mega h2,
+#planos .planos-valores .plano-300mega h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--roxo);
+}
+
+#planos .planos-valores .plano-100mega h3,
+#planos .planos-valores .plano-200mega h3,
+#planos .planos-valores .plano-300mega h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#planos .planos-valores .plano-100mega div i,
+#planos .planos-valores .plano-200mega div i,
+#planos .planos-valores .plano-300mega div i {
+    font-size: 18px;
+    color: var(--roxo);
+}
+
+#planos .planos-valores .plano-100mega div span,
+#planos .planos-valores .plano-200mega div span,
+#planos .planos-valores .plano-300mega div span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#planos .planos-valores .plano-100mega a,
+#planos .planos-valores .plano-200mega a,
+#planos .planos-valores .plano-300mega a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+    background: linear-gradient(to right, var(--roxo), var(--marrom-escuro), var(--marrom-claro));
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#planos .planos-valores .plano-100mega a:hover,
+#planos .planos-valores .plano-200mega a:hover,
+#planos .planos-valores .plano-300mega a:hover {
+    box-shadow: 0px 1px 10px var(--preto);
+}
+
+.mais-planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mais-planos h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.mais-planos h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -7px;
+    color: var(--roxo);
+}
+
+.mais-planos a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFF;
+    background: linear-gradient(to right, var(--roxo), var(--marrom-escuro), var(--marrom-claro));
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.mais-planos a:hover {
+    box-shadow: 0px 1px 10px var(--preto);
+}
+
+#sobre-nos {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px;
+    background-color: var(--roxo);
+}
+
+#sobre-nos .container {
+    display: flex;
+}
+
+#sobre-nos .sobre-nos--img {
+    display: flex;
+    max-width: 450px;
+    margin: 50px;
+    background-color: var(--branco);
+    align-items: center;
+    padding: 30px;
+}
+
+#sobre-nos .sobre-nos--img img{
+    max-width: inherit;
+}
+
+#sobre-nos .sobre-nos--text {
+    margin: 50px;
+}
+
+#sobre-nos .sobre-nos--text h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+    color: var(--branco);
+}
+
+#sobre-nos .sobre-nos--text p {
+    font-size: 17px;
+    line-height: 1.6rem;
+    color: var(--branco);
+}
+
+#fale-conosco {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+#fale-conosco .container {
+    display: flex;
+}
+
+#fale-conosco .fale-conosco--form {
+    margin: 50px;
+}
+
+#fale-conosco .fale-conosco--form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#fale-conosco .fale-conosco--form h2 {
+    font-size: 30px;
+    color: var(--roxo);
+}
+
+#fale-conosco .fale-conosco--form span {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#fale-conosco .fale-conosco--form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#fale-conosco .fale-conosco--form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#fale-conosco .fale-conosco--form button {
+    font-size: 16px;
+    color: #FFF;
+    background: linear-gradient(to right, var(--roxo), var(--marrom-escuro), var(--marrom-claro));
+    padding: 10px 50px;
+    margin: 20px 130px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+#fale-conosco .fale-conosco--form button:hover {
+    box-shadow: 0px 1px 10px var(--preto);
+}
+
+#fale-conosco .fale-conosco--mapa {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: var(--branco);
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    width: 600px;
+    height: 570px;
+}
+
+#fale-conosco .fale-conosco--mapa iframe {
+    width: inherit;
+    height: inherit;
+}
+
+#fale-conosco .fale-conosco--mapa div{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(145deg, var(--marrom-claro) 0%, var(--roxo) 100%);
+    margin-top: 50px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer .copyrightarea {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 200px;
+    margin-right: 50px;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 17px;
+    color: var(--branco);
+}
+
+footer .copyright strong:hover {
+    color: var(--verde-limao);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 800px;
+        height: 500px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+        
+}
+
+@media (min-width: 900px) and (max-width: 999px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading a {
+        margin-right: 80px;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 800px;
+        height: 500px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+        
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading a {
+        margin-right: 80px;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #planos .planos-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .planos-valores .plano-100mega,
+    #planos .planos-valores .plano-200mega,
+    #planos .planos-valores .plano-300mega {
+        max-width: 500px;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 600px;
+        height: 400px;
+        padding-left: 0px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        
+}
+
+@media (min-width: 640px) and (max-width: 699px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading a {
+        margin-right: 80px;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #planos .planos-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .planos-valores .plano-100mega,
+    #planos .planos-valores .plano-200mega,
+    #planos .planos-valores .plano-300mega {
+        max-width: 500px;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 400px;
+        height: 300px;
+        padding-left: 0px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+    
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 639px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    .heading .logo {
+        width: 150px;
+        height: 50px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading a {
+        margin-right: 80px;
+        font-size: 12px;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 40px;
+    }
+
+    #banner .banner-content div {
+        font-size: 18px;
+    }
+
+    #banner .banner-content a {
+        font-size: 20px;
+    }
+
+    #planos .beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .beneficios div {
+        padding-left: 35px;
+    }
+
+    #planos .beneficios .bordas-laterais {
+        border-left: none;
+        border-right: none;
+        padding-left: 0px;
+    }
+
+    #planos .planos-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .planos-valores .plano-100mega,
+    #planos .planos-valores .plano-200mega,
+    #planos .planos-valores .plano-300mega {
+        max-width: 500px;
+    }
+
+    .mais-planos h2 {
+        text-align: center;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 600px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 400px;
+        height: 300px;
+        padding-left: 0px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+    
+    footer .container {
+        justify-content: center;
+    }
+
+    footer .copyrightarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    .heading .logo {
+        width: 150px;
+        height: 50px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading .whatsapp {
+        display: none;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner .banner-img {
+        display: none;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #banner .banner-content div {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #banner .banner-content a {
+        font-size: 20px;
+        margin-top: 85px;
+    }
+
+    #planos .beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .beneficios div {
+        padding-left: 35px;
+    }
+
+    #planos .beneficios .bordas-laterais {
+        border-left: none;
+        border-right: none;
+        padding-left: 0px;
+    }
+
+    #planos .planos-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .planos-valores .plano-100mega,
+    #planos .planos-valores .plano-200mega,
+    #planos .planos-valores .plano-300mega {
+        max-width: 500px;
+    }
+
+    .mais-planos h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 300px;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 300px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--form button {
+        margin: 20px 50px;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 300px;
+        height: 280px;
+    }
+
+    .fale-conosco .fale-conosco--mapa div {
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+    
+    footer .container {
+        justify-content: center;
+    }
+
+    footer .copyrightarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+}
+
+@media (max-width: 399px) {
+    header .heading {
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    .heading .logo {
+        width: 150px;
+        height: 50px;
+    }
+
+    header .heading nav {
+        display: none;
+    }
+
+    header .heading .whatsapp {
+        display: none;
+    }
+
+    header .heading .logo-mobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    #banner .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 91px 20px;
+    }
+
+    #banner .banner-img {
+        display: none;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #banner .banner-content div {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #banner .banner-content a {
+        font-size: 20px;
+        margin-top: 85px;
+    }
+
+    #planos .beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .beneficios div {
+        padding-left: 35px;
+    }
+
+    #planos .beneficios .bordas-laterais {
+        border-left: none;
+        border-right: none;
+        padding-left: 0px;
+    }
+
+    #planos .planos-valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #planos .planos-valores .plano-100mega,
+    #planos .planos-valores .plano-200mega,
+    #planos .planos-valores .plano-300mega {
+        max-width: 500px;
+    }
+
+    .mais-planos h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #sobre-nos .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sobre-nos .sobre-nos--img {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 250px;
+    }
+
+    #sobre-nos .sobre-nos--text {
+        text-align: center;
+        margin: 25px;
+    }
+
+    #sobre-nos .sobre-nos--text h2 {
+        font-size: 27px;
+    }
+
+    #fale-conosco .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale-conosco .fale-conosco--form {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 300px;
+    }
+
+    #fale-conosco .fale-conosco--form h2,
+    #fale-conosco .fale-conosco--form span {
+        text-align: center;
+    }
+
+    #fale-conosco .fale-conosco--form button {
+        margin: 20px 50px;
+    }
+
+    #fale-conosco .fale-conosco--mapa {
+        width: 270px;
+        height: 250px;
+        padding-left: 0;
+    }
+
+    #fale-conosco .fale-conosco--mapa div {
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+    
+    footer .container {
+        justify-content: center;
+    }
+
+    footer .copyrightarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+}
